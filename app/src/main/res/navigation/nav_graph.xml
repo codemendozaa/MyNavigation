@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.codemen.mynavigation.fragment.HomeFragment"
-        android:label="fragment_home"
+        android:label="fragment Home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_firstFragment22"
@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/firstFragment2"
         android:name="com.codemen.mynavigation.fragment.FirstFragment"
-        android:label="fragment_first"
+        android:label="fragment First"
         tools:layout="@layout/fragment_first">
         <action
             android:id="@+id/action_firstFragment2_to_homeFragment2"
@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.codemen.mynavigation.fragment.SecondFragment"
-        android:label="fragment_second"
+        android:label="fragment Second"
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_secondFragment_to_homeFragment"
