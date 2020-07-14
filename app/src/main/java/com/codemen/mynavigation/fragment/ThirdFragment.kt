@@ -5,30 +5,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.codemen.mynavigation.R
-import com.codemen.mynavigation.User
-import kotlinx.android.synthetic.main.fragment_second.*
+import kotlinx.android.synthetic.main.fragment_third.*
 
-
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
+    private val args: ThirdFragmentArgs? by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        buttonThrirdFragment.setOnClickListener {
-            val user = User("Erix", "Gracias!! por tu atención..")
-            findNavController().navigate(
-                SecondFragmentDirections.actionSecondFragmentToThirdFragment(user)
-            )
+        args?.user?.let {
+            val datos = "\n\nName: ${it.name}" + "\nTitle:${it.title}"
+            textArgs.append(datos)
         }
     }
 

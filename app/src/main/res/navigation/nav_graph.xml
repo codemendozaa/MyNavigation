@@ -40,5 +40,21 @@
             app:destination="@id/homeFragment"
             app:popUpTo="@id/secondFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.codemen.mynavigation.fragment.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third">
+        <argument
+            android:name="user"
+            android:defaultValue="@null"
+            app:argType="com.codemen.mynavigation.User"
+            app:nullable="true" />
     </fragment>
 </navigation>

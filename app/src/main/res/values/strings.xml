@@ -5,4 +5,7 @@
     <string name="hello_blank_fragment">Home</string>
     <string name="first_fragment">ONE</string>
     <string name="second_fragment">TWO</string>
+    <string name="third_fragment">THREE</string>
+    <string name="home">home</string>
+    <string name="deeplink">deeplink</string>
 </resources>

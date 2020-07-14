@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
                 .navigate(R.id.firstFragment2)
         }
 
-        buttonSecondFragment.setOnClickListener { view: View ->
+        buttonSecondFragment.setOnClickListener { view ->
             view.findNavController()
                 .navigate(R.id.secondFragment)
         }

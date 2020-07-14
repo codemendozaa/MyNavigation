@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SecondFragment">
+    tools:context=".fragment.ThirdFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +13,7 @@
         android:layout_marginTop="116dp"
         android:background="@android:color/holo_red_light"
         android:gravity="center"
-        android:text="@string/second_fragment"
+        android:text="@string/third_fragment"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,24 +24,24 @@
         android:layout_width="96dp"
         android:layout_height="86dp"
         android:layout_marginTop="56dp"
-        android:background="@drawable/ic_looks_two"
+        android:background="@drawable/ic_looks_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/buttonThrirdFragment"
-        android:layout_width="267dp"
-        android:layout_height="71dp"
-        android:layout_marginBottom="180dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Third Fragment"
-        android:textSize="18sp"
+    <TextView
+        android:id="@+id/textArgs"
+        android:layout_width="300dp"
+        android:layout_height="266dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonFirst"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonFirst" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
