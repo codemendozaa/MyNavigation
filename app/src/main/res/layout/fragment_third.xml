@@ -32,16 +32,17 @@
 
     <TextView
         android:id="@+id/textArgs"
-        android:layout_width="300dp"
-        android:layout_height="266dp"
+        android:layout_width="349dp"
+        android:layout_height="210dp"
         android:background="@color/colorAccent"
         android:gravity="center"
         android:textColor="@color/colorPrimary"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonFirst"
+        app:layout_constraintVertical_bias="0.177" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

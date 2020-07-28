@@ -24,7 +24,7 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         args?.user?.let {
-            val datos = "\n\nName: ${it.name}" + "\nTitle:${it.title}"
+            val datos = "\n\n ${it.name}" + "\n${it.title}"
             textArgs.append(datos)
         }
     }

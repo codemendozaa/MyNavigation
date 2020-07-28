@@ -25,7 +25,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         buttonThrirdFragment.setOnClickListener {
-            val user = User("Erix", "Gracias!! por tu atención..")
+            val user = User("Android Dev Perú", "Gracias!! por tu atención..")
             findNavController().navigate(
                 SecondFragmentDirections.actionSecondFragmentToThirdFragment(user)
             )
